@@ -9,8 +9,6 @@ def part_one(rs_data):
         for component in compartment1:
             if component in compartment2:
                 score += int(priority_dictionary[component])
-                next_rucksack = True
-            if next_rucksack:
                 break
     print(score)
 
@@ -22,8 +20,6 @@ def part_two(rs_data):
         for component in rucksack_group[0]:
             if component in rucksack_group[1] and component in rucksack_group[2]:
                 score += priority_dictionary[component]
-                next_rucksack_group = True
-            if next_rucksack_group:
                 break
     print(score)
 
