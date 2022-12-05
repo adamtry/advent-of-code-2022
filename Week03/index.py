@@ -3,7 +3,6 @@ import string
 def part_one(rs_data):
     score = 0
     for rucksack in rs_data:
-        next_rucksack = False
         compartment1 = rucksack[ 0 : len(rucksack)//2 ]
         compartment2 = rucksack[ len(rucksack)//2 : ]
         for component in compartment1:
@@ -15,7 +14,6 @@ def part_one(rs_data):
 def part_two(rs_data):
     score = 0
     for i in range(0, len(rs_data), 3):
-        next_rucksack_group = False
         rucksack_group = rs_data[i:i+3]
         for component in rucksack_group[0]:
             if component in rucksack_group[1] and component in rucksack_group[2]:
