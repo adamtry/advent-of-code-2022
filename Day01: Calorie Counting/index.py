@@ -5,7 +5,7 @@ class Elf():
     def get_total_calories(self):
         return sum(self.fruit_calories_list)
 
-with open("aoc_input.txt", "r") as outfile:
+with open("input.txt", "r") as outfile:
     elf_input=outfile.read()
 elf_fruit_list = elf_input.split("\n\n")
 
