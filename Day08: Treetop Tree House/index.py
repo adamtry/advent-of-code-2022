@@ -1,12 +1,11 @@
 """
-Coordinate (x, y)
-0 y - - > 0
-x
+Coordinate (row, col)
+0 col - - > 0
+row
 |
 v
 0
 """
-
 
 class Coordinate:
     def __init__(self, row, col):
