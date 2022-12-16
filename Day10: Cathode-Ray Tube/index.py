@@ -84,4 +84,4 @@ if __name__ == "__main__":
     sum_ss_p1 = mr_braun.get_sum_of_signal_strengths_at_cycle_indexes(test_indexes_p1)
     assert sum_ss_p1 == 14540
 
-    # TODO: Part 2
+    # TwoDo: Part 2
